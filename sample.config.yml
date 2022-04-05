@@ -1,0 +1,13 @@
+general:
+  locale: en-US
+  title: Sorensen Cloud
+
+search:
+  enabled: true
+  provider: duckduckgo # google, duckduckgo
+
+links:
+  - name: Radarr
+    url: http://radarr.internal.sorensen.cloud
+  - name: Sonarr
+    url: http://sonarr.internal.sorensen.cloud
