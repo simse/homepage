@@ -1,4 +1,4 @@
-FROM node:16.13.1-stretch-slim
+FROM node:16.13.1-alpine AS builder
 
 WORKDIR /app
 
@@ -11,6 +11,16 @@ COPY . /app/
 RUN yarn build
 
 RUN rm -rf node_modules
-RUN yarn install --frozen-lockfile --production
+RUN yarn install --production
+RUN yarn cache clean
+
+
+FROM node:16.13.1-alpine
+
+WORKDIR /app
+COPY --from=builder /app/.next ./.next
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/package.json ./package.json
+
 
 ENTRYPOINT [ "yarn", "start" ]
