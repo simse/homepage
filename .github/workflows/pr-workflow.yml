@@ -1,0 +1,78 @@
+name: pr-check
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - 
+        name: Checkout latest PR commit
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      -
+        name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+
+      -
+        name: Install depedencies
+        run: yarn
+
+      -
+        name: Lint
+        run: yarn lint
+
+  types:
+    runs-on: ubuntu-latest
+
+    steps:
+      - 
+        name: Checkout latest PR commit
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      -
+        name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+
+      -
+        name: Install depedencies
+        run: yarn
+
+      -
+        name: Check types
+        run: yarn check:types
+
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - 
+        name: Checkout latest PR commit
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      -
+        name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+
+      -
+        name: Install depedencies
+        run: yarn
+
+      -
+        name: Run Jest tests
+        run: yarn test
