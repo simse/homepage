@@ -17,10 +17,10 @@ const SearchBox = () => {
 
     return (
         <div>
-            <form className={styles.box} onSubmit={handleSubmit}>
+            <form className={styles.box} onSubmit={handleSubmit} role={'search'}>
                 <input type="search" placeholder="Search" value={searchValue} onChange={handleChange} />
 
-                <button>search</button>
+                <button type={"button"}>search</button>
             </form>
         </div>
     )
