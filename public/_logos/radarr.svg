@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>SVG</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <ellipse id="path-1" cx="512" cy="512" rx="512" ry="512"></ellipse>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="1024" height="1024" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="1024" height="1024" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <polygon id="path-5" points="0 0 1007.8334 0 1007.8334 1181.7303 0 1181.7303"></polygon>
+        <polygon id="path-7" points="0 0.308593451 979.971467 0.308593451 979.971467 66.8717453 0 66.8717453"></polygon>
+        <polygon id="path-9" points="0 0.308593451 979.971467 0.308593451 979.971467 66.8717453 0 66.8717453"></polygon>
+        <polygon id="path-11" points="0 0.308593451 979.971467 0.308593451 979.971467 66.8717453 0 66.8717453"></polygon>
+        <polygon id="path-13" points="0 0.308593451 979.971467 0.308593451 979.971467 66.8717453 0 66.8717453"></polygon>
+        <polygon id="path-15" points="0 0.308593451 979.971467 0.308593451 979.971467 66.8717453 0 66.8717453"></polygon>
+        <polygon id="path-17" points="0 0.308593451 979.971467 0.308593451 979.971467 66.8717453 0 66.8717453"></polygon>
+        <polygon id="path-19" points="0 0.308593451 979.971467 0.308593451 979.971467 66.8717453 0 66.8717453"></polygon>
+        <polygon id="path-21" points="0 0.308593451 979.971467 0.308593451 979.971467 66.8717453 0 66.8717453"></polygon>
+        <polygon id="path-23" points="0 0.308593451 979.971467 0.308593451 979.971467 66.8717453 0 66.8717453"></polygon>
+        <polygon id="path-25" points="0 0.308593451 979.971467 0.308593451 979.971467 66.8717453 0 66.8717453"></polygon>
+        <polygon id="path-27" points="0 0.308593451 979.971467 0.308593451 979.971467 66.8717453 0 66.8717453"></polygon>
+        <polygon id="path-29" points="0 0.308593451 979.971467 0.308593451 979.971467 66.8717453 0 66.8717453"></polygon>
+        <polygon id="path-31" points="0 0.308593451 979.971467 0.308593451 979.971467 66.8717453 0 66.8717453"></polygon>
+        <polygon id="path-33" points="0 0.308593451 979.971467 0.308593451 979.971467 66.8717453 0 66.8717453"></polygon>
+        <polygon id="path-35" points="0 0.308593451 979.971467 0.308593451 979.971467 66.8717453 0 66.8717453"></polygon>
+        <polygon id="path-37" points="0 0.308593451 979.971467 0.308593451 979.971467 66.8717453 0 66.8717453"></polygon>
+        <polygon id="path-39" points="0 0.308593451 979.971467 0.308593451 979.971467 66.8717453 0 66.8717453"></polygon>
+        <polygon id="path-41" points="0 0.308593451 979.971467 0.308593451 979.971467 66.8717453 0 66.8717453"></polygon>
+        <polygon id="path-43" points="0 0.308593451 979.971467 0.308593451 979.971467 66.8717453 0 66.8717453"></polygon>
+        <polygon id="path-45" points="0 0.308593451 979.971467 0.308593451 979.971467 66.8717453 0 66.8717453"></polygon>
+        <path d="M211.257613,211.421878 C134.335253,288.344238 86.7577838,394.611489 86.7577838,511.991053 C86.7577838,629.370617 134.335253,735.637868 211.257613,812.560228 L511.826788,511.991053 L211.257613,211.421878 Z" id="path-47"></path>
+        <path d="M639.447177,208.78225 C562.524817,285.704609 514.947349,391.97186 514.947349,509.351425 C514.947349,626.730989 562.524817,732.99824 639.447177,809.9206 L940.016353,509.351425 L639.447177,208.78225 Z" id="path-49"></path>
+        <ellipse id="path-51" cx="512" cy="512" rx="512" ry="512"></ellipse>
+        <mask id="mask-52" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="1024" height="1024" fill="white">
+            <use xlink:href="#path-51"></use>
+        </mask>
+    </defs>
+    <g id="Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SVG">
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask" stroke="#FFC231" mask="url(#mask-2)" stroke-width="40" fill="#050808">
+                <use mask="url(#mask-4)" xlink:href="#path-1"></use>
+            </g>
+            
+
+            <mask id="mask-48" fill="white">
+                <use xlink:href="#path-47"></use>
+            </mask>
+            <use id="Combined-Shape" fill="#F1F1F1" xlink:href="#path-47"></use>
+            <mask id="mask-50" fill="white">
+                <use xlink:href="#path-49"></use>
+            </mask>
+            <use id="Combined-Shape" fill="#F1F1F1" transform="translate(727.481851, 509.351425) rotate(-180.000000) translate(-727.481851, -509.351425) " xlink:href="#path-49"></use>
+            <circle id="Oval-2" fill="#FFC231" cx="512.387624" cy="512.387624" r="135.118088"></circle>
+            <path d="M691.584224,554.79626 L741.584224,554.79626 L741.584224,848.113106 L691.584224,848.113106 L691.584224,554.79626 Z M691.584224,668.27622 L707.760695,668.27622 L707.760695,848.113106 L691.584224,848.113106 L691.584224,668.27622 Z M725.407754,668.27622 L741.584224,668.27622 L741.584224,848.113106 L725.407754,848.113106 L725.407754,668.27622 Z" id="Combined-Shape" fill="#FFC231" transform="translate(716.584224, 701.454683) rotate(133.000000) translate(-716.584224, -701.454683) "></path>
+            <path d="M288.802242,169.956176 L338.802242,169.956176 L338.802242,463.273022 L288.802242,463.273022 L288.802242,169.956176 Z M288.802242,283.436136 L304.978713,283.436136 L304.978713,463.273022 L288.802242,463.273022 L288.802242,283.436136 Z M322.625772,283.436136 L338.802242,283.436136 L338.802242,463.273022 L322.625772,463.273022 L322.625772,283.436136 Z" id="Combined-Shape" fill="#FFC231" transform="translate(313.802242, 316.614599) scale(-1, -1) rotate(133.000000) translate(-313.802242, -316.614599) "></path>
+            <path d="M816.093378,100.047294 C731.060203,37.1735645 625.871277,0 512,0 C398.30327,0 293.262295,37.0596891 208.297793,99.7583476 L404.58707,301.155391 C436.776006,284.750117 473.221118,275.499672 511.826788,275.499672 C550.704585,275.499672 587.391258,284.880988 619.746562,301.503373 L816.093378,100.047294 Z" id="Combined-Shape" fill="#F1F1F1"></path>
+            <path d="M816.093378,823.047294 C731.060203,760.173564 625.871277,723 512,723 C398.30327,723 293.262295,760.059689 208.297793,822.758348 L404.58707,1024.15539 C436.776006,1007.75012 473.221118,998.499672 511.826788,998.499672 C550.704585,998.499672 587.391258,1007.88099 619.746562,1024.50337 L816.093378,823.047294 Z" id="Combined-Shape" fill="#F1F1F1" transform="translate(512.195585, 873.751687) scale(1, -1) translate(-512.195585, -873.751687) "></path>
+            <use id="Grid-Mask" stroke="#FFC231" mask="url(#mask-52)" stroke-width="40" xlink:href="#path-51"></use>
+        </g>
+    </g>
+</svg>
