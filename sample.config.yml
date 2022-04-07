@@ -11,3 +11,4 @@ links:
     url: http://radarr.internal.sorensen.cloud
   - name: Sonarr
     url: http://sonarr.internal.sorensen.cloud
+    image: sonarr.svg

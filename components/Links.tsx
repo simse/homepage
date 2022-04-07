@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import type { Link } from '../lib/types'
 
 import styles from '../styles/components/Links.module.scss'
@@ -14,7 +15,18 @@ const Links = ({ links }: LinksProps) => {
 
       <div className={styles.grid}>
         {links.map(link => (
-          <a href={link.url} className={styles.card} key={link.name}>
+          <a href={link.url} className={`${styles.card} ${link.image ? '' : styles.noImage}`} key={link.name}>
+            {link.image && <>
+              <Image
+                src={"/_logos/" + link.image}
+                alt="Picture of the author"
+                width={64}
+                height={64}
+                className={styles.cardImage}
+              />
+              <div className={styles.cardSpacer}></div>
+            </>}
+
             <h3 className={styles.cardTitle}>{link.name}</h3>
           </a>
         ))}
