@@ -2,6 +2,7 @@ declare global {
     namespace NodeJS {
       interface ProcessEnv {
         CONFIG_FILE: string
+        STORAGE_DIR: string
       }
     }
   }

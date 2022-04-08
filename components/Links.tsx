@@ -19,7 +19,7 @@ const Links = ({ links }: LinksProps) => {
             {link.image && <>
               <Image
                 src={"/_logos/" + link.image}
-                alt="Picture of the author"
+                alt={link.name + ' logo'}
                 width={64}
                 height={64}
                 className={styles.cardImage}
