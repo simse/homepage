@@ -10,13 +10,19 @@ export default async function handler(
   res: NextApiResponse<any>
 ) {
   // get image key
-  const imageKey = req.query.key.toString()
+  let imageKey = req.query.key.toString()
 
   let imagePath = ''
 
   // check if image key is external
   if (imageKey.startsWith('http') || imageKey.startsWith('https')) {
     imagePath = await cacheAndReturnRemoteImage(imageKey);
+  }
+
+  // check if image key is local from logo directory
+  else if (imageKey.startsWith('_logo/')) {
+    imageKey = imageKey.replace('_logo/', '')
+    imagePath = `${process.cwd()}/logos/${imageKey}`
   }
 
   // no image path has been found

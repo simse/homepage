@@ -14,4 +14,4 @@ links:
     image: https://developer.asustor.com/uploadIcons/0020_999_1573625786_Radarr_256.png
   - name: Sabnzbd
     url: http://sabnzbd.internal.sorensen.cloud
-    image: sabnzbd.webp
+    image: _logo/sabnzbd.webp

@@ -18,7 +18,7 @@ const Links = ({ links }: LinksProps) => {
           <a href={link.url} className={`${styles.card} ${link.image ? '' : styles.noImage}`} key={link.name}>
             {link.image && <>
               <Image
-                src={"/_logos/" + link.image}
+                src={"/api/logo?key=" + link.image}
                 alt={link.name + ' logo'}
                 width={64}
                 height={64}
