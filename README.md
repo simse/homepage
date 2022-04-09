@@ -34,8 +34,13 @@ search:
 links:
   - name: Radarr
     url: http://radarr.internal.sorensen.cloud
+    image: radarr
   - name: Sonarr
     url: http://sonarr.internal.sorensen.cloud
+    image: sonarr
+  - name: CouchPotato
+    url: http://couchpotato.internal.sorensen.cloud
+    image: http://couchpota.to/media/images/full.png
 ```
 
 
