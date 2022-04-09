@@ -9,6 +9,7 @@ search:
 links:
   - name: Radarr
     url: http://radarr.internal.sorensen.cloud
+    image: radarr
   - name: Sonarr
     url: http://sonarr.internal.sorensen.cloud
     image: https://developer.asustor.com/uploadIcons/0020_999_1573625786_Radarr_256.png

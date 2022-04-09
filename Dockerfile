@@ -17,10 +17,14 @@ RUN yarn cache clean
 
 FROM node:16.13.1-alpine
 
+# default ENV to allow container to start in demo mode
+ENV CONFIG_FILE=sample.config.yml
+ENV STORAGE_DIR=/app/storage
+
 WORKDIR /app
-COPY --from=builder /app/.next ./.next
-COPY --from=builder /app/logos ./logos
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/package.json ./package.json
+
+RUN mkdir /app/storage
+
+COPY --from=builder /app/ /app/
 
 ENTRYPOINT [ "yarn", "start" ]
