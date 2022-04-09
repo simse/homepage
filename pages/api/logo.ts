@@ -2,7 +2,10 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import fs from 'fs'
 import mime from 'mime'
+
 import { cacheAndReturnRemoteImage } from '../../lib/cache'
+import { listFilesAsKeys } from '../../lib/files'
+
 
 
 export default async function handler(
@@ -20,9 +23,14 @@ export default async function handler(
   }
 
   // check if image key is local from logo directory
-  else if (imageKey.startsWith('_logo/')) {
-    imageKey = imageKey.replace('_logo/', '')
-    imagePath = `${process.cwd()}/logos/${imageKey}`
+  else {
+    const logoFiles = await listFilesAsKeys(process.cwd() + '/logos')
+    
+    logoFiles.forEach(file => {
+      if(file.key === imageKey) {
+        imagePath = file.path
+      }
+    })
   }
 
   // no image path has been found
