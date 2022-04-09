@@ -24,7 +24,13 @@ export default async function handler(
 
   // check if image key is local from logo directory
   else {
-    const logoFiles = await listFilesAsKeys(process.cwd() + '/logos')
+    let logoFiles = await listFilesAsKeys(process.cwd() + '/logos')
+
+    if(fs.existsSync(process.env.STORAGE_DIR + '/logos')) {
+      let storageLogoFiles = await listFilesAsKeys(process.env.STORAGE_DIR + '/logos')
+      logoFiles = logoFiles.concat(storageLogoFiles)
+    }
+
     
     logoFiles.forEach(file => {
       if(file.key === imageKey) {
