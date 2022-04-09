@@ -11,6 +11,7 @@ interface SearchConfig {
 interface Link {
   name: string
   url: string
+  image?: string
 }
 
 interface Config {
